@@ -94,44 +94,25 @@
 
 <div class="container marketing bg-light">
 <hr class="featurette-divider">
-<h1 class="text-center my-3">Our Mission</h1>
+<h1 class="text-center my-3">Our Objective</h1>
   <div class="row featurette">
 
     <div class="col-md-7">
-      <h2 class="featurette-heading">First featurette. <span class="text-muted">It’ll blow your mind.</span></h2>
-      <p class="lead">Somaiya Connect mission is to share and grow the knowledge. A vast amount of the knowledge that would be valuable to many people is currently only available to a few categories. We want to connect the people who have knowledge to the people who need it.</p>
+      <h2 class="featurette-heading"><span class="text-muted">Somaiya Connect</span></h2>
+      <p class="lead">Welcome to our platform! We are thrilled to have you join our vibrant community of students, faculty, alumni, and professionals from all walks of life. Our aim is to create a space that encourages collaboration, fosters a sense of belonging, and helps you connect with others who share your passions and interests.
+
+ Our website is designed to be easy to use and navigate, with a range of features that make it fun and engaging to connect with others. From discussion forums and Q&A sections to mentorship programs and networking events, there are plenty of opportunities to interact with your peers and mentors.
+
+Whether you're seeking academic advice, career guidance, or just looking to make new friends, our platform is the perfect place to do so. You can explore a wide range of topics, join groups and clubs, and engage in conversations that interest you. So come on in, join the conversation, and be a part of our friendly and welcoming community!</p>
     </div>
     <div class="col-md-5">
-    <img src="img9.jpg" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" >
+    <img src="com.jpg" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="1000" height="1000" >
 
-      <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+     
     </div>
   </div>
 
-  <hr class="featurette-divider">
-
-  <div class="row featurette">
-    <div class="col-md-7 order-md-2">
-      <h2 class="featurette-heading">Oh yeah, it is our solution. <span class="text-muted">See for yourself.</span></h2>
-      <p class="lead">It is an initiative to help the upcoming students with the discussion forum.Somaiya Connect focuses on providing the most efficient way to solve your queries or solution wants to be simple way.We will help students build up concepts and easy to solve their queries.</p>
-    </div>
-    <div class="col-md-5 order-md-1">
-    <img src="img10.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="" width="500" height="500">
-    </div>
-  </div>
-
-  <hr class="featurette-divider">
-
-  <div class="row featurette">
-    <div class="col-md-7">
-      <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-      <p class="lead">There are number of students who has better knowledge, our motive is connect all the students to this discussion forum it will help you to solve your ideas and queries easily. </p>
-    </div>
-    <div class="col-md-5">
-    <img src="img11.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="" width="500" height="500">
-
-    </div>
-  </div>
+ 
 
 
   <!-- Three columns of text below the carousel -->
