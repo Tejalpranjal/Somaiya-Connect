@@ -19,7 +19,7 @@
             <form action="/collage_forum/partial/_handleLogin.php" method="post">
             <div class="modal-body">
                     <div class="form-group">
-                        <label for="loginEmail">Username</label>
+                        <label for="loginEmail">UserEmail</label>
                         <input type="text" class="form-control" id="loginEmail" aria-describedby="emailHelp" name="loginEmail">
                         <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                             else.</small> -->
@@ -27,6 +27,10 @@
                     <div class="form-group">
                         <label for="login_pass">Password</label>
                         <input type="password" class="form-control"  id="login_pass" name="login_pass">
+                    </div>
+                    <div class="form-group">
+                        <label for="loginName">UserName</label>
+                        <input type="text" class="form-control"  id="loginName" name="loginName">
                     </div>
                   
                     <button type="submit" class="btn btn-primary">Login</button>
