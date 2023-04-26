@@ -8,12 +8,19 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $user=str_replace(">","&gt;","$user");
     $user=str_replace('"',"&quot;","$user");
     $user=str_replace("'","&apos;","$user");
+
     $pass=$_POST['signupPassword'];
     $pass=str_replace("<","&lt;","$pass");
     $pass=str_replace(">","&gt;","$pass");
     $pass=str_replace('"',"&quot;","$pass");
     $pass=str_replace("'","&apos;","$pass");    
 
+    $username = $_POST['username'];
+    $username = str_replace("<", "&lt;", $username);
+    $username = str_replace(">", "&gt;", $username);
+    $username = str_replace('"', "&quot;", $username);
+    $username = str_replace("'", "&apos;", $username);
+    
     $cpass=$_POST['signupcPassword'];
 
 
@@ -28,7 +35,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     else{
       if($pass==$cpass){
        $hash=password_hash($pass,PASSWORD_DEFAULT);
-       $sql="INSERT INTO `users` (`user_email`, `user_pass`, `timestamp`) VALUES ('$user_email', '$hash', current_timestamp())";
+       $sql="INSERT INTO `users` (`user_email`,`user_name`, `user_pass`, `timestamp`) VALUES ('$user_email','$username', '$hash', current_timestamp())";
        $result=mysqli_query($conn,$sql);
        if($result==true){
            $showAlert=true;
