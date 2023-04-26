@@ -19,6 +19,7 @@
     <?php include 'partial/db_connect.php'; ?>
     <?php include 'partial/_header.php'; ?>
 
+
     <!-- slider starts here -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -40,14 +41,14 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="group.jpg" class="d-block w-100" alt="...">
+                <img src="campus.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h1>Welcome</h1>
                     <h1>To Somaiya Connect</h1>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img6.jpg" class="d-block w-100" alt="...">
+                <img src="campus.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h1>Welcome</h1>
                     <h1>To Somaiya Connect</h1>
@@ -65,7 +66,7 @@
     </div>
     <!-- category container starts here -->
     <div class="container-fluid my-5">
-        <h2 class="text-center my-3"><kbd class="text-primary">Categories</kbd></h2>
+        <h2 class="text-center my-3">Categories</h2>
         <div class="row my-4">
             <!-- fetch all the categories -->
             <?php $sql="SELECT * FROM `categories`";  
