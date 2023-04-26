@@ -27,6 +27,10 @@
                       </small>
                     </div>
                     <div class="form-group">
+                        <label for="exampleInputEmail1">UserEmail</label>
+                        <input type="text" class="form-control" id="signupEmail" name="signupEmail">
+                    </div>
+                    <div class="form-group">
                         <label for="exampleInputPassword1">Password</label>
                         <input type="password" class="form-control" id="signupPassword" name="signupPassword">
                     </div>
