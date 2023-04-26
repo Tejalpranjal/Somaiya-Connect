@@ -101,7 +101,7 @@ CREATE TABLE `threads` (
 
 
 CREATE TABLE `users` (
-  `sno` int(8) NOT NULL AUTO_INCREMENT PRIMARY KEY,,
+  `sno` int(8) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `user_email` varchar(30) NOT NULL,
   `user_name` varchar(30) NOT NULL,
   `user_pass` varchar(255) NOT NULL,
