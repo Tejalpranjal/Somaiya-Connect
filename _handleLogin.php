@@ -5,6 +5,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     include 'db_connect.php';
    $email=$_POST['loginEmail'];    
    $pass=$_POST['login_pass'];
+   $name=$_POST['loginName'];
    
    $sql="select * from `users` where `user_email`='$email'";
    $result=mysqli_query($conn,$sql);
@@ -16,6 +17,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         $_SESSION['loggedin']=true;
         $_SESSION['sno']=$row['sno'];
         $_SESSION['useremail']=$email;
+        $_SESSION['userName']=$name;
         // echo "logged in".$email;
 
         header("Location: /collage_forum/profile.php?Result=true");
