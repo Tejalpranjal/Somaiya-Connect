@@ -46,7 +46,7 @@ echo '<nav class="navbar navbar-expand-xl navbar-dark bg-dark">
     </li>';
     if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']=true){
     echo '<li class="nav-item">
-      <a class="nav-link" href="setting.php"><i class="fa fa-cog mr-2" aria-hidden="true"></i><b>Setting</b></a>
+      <a class="nav-link" href="profile.php"><i class="fa fa-cog mr-2" aria-hidden="true"></i><b>Setting</b></a>
     </li>';
     }
   echo '</ul>
@@ -97,13 +97,21 @@ if(isset($_GET['Result']) && $_GET['Result']=="true" ){
     </button>
   </div>';
 }
-if(isset($_GET['error']) && $_GET['error']=="true" ){
+if(isset($_GET['passerror']) && $_GET['passerror']=="true" ){
     echo '<div class="alert alert-danger alert-dismissible fade show my-0" role="alert">
     <strong>Error!</strong> password do not match.
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>';
+}
+if(isset($_GET['error']) && $_GET['error']=="true" ){
+  echo '<div class="alert alert-danger alert-dismissible fade show my-0" role="alert">
+  <strong>Error!</strong> "Invalid email id!"
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>';
 }
 if(isset($_GET['emailused']) && $_GET['emailused']=="true" ){
     echo '<div class="alert alert-danger alert-dismissible fade show my-0" role="alert">
