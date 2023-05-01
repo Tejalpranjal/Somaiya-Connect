@@ -118,11 +118,11 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
                             placeholder="Email address"  required>
 
                     </div>
-                    <div class="form-group ">
-                        <label for="contact">Contact Number:</label>
-                        <input type="tel"  minlength="10" class="form-control" id="contact" name="contact" placeholder="(Ex-9785757583)"  required>
-
+                    <div class="form-group">
+                    <label for="contact">Contact Number:</label>
+                    <input type="tel" class="form-control" id="contact" name="contact" placeholder="(Ex-9785757583)" maxlength="10" required>
                     </div>
+
                    
                     <button type="submit" class="btn btn-info btn-block my-2">Save</button>
 
