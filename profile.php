@@ -120,7 +120,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
                     </div>
                     <div class="form-group">
                     <label for="contact">Contact Number:</label>
-                    <input type="tel" class="form-control" id="contact" name="contact" placeholder="(Ex-9785757583)" maxlength="10" required>
+                    <input type="tel" minlength = "10" class="form-control" id="contact" name="contact" placeholder="(Ex-9785757583)" maxlength="10" required>
                     </div>
 
                    
