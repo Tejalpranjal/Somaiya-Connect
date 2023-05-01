@@ -3,7 +3,7 @@ $showError="false";
 $showAlert=false;
 if($_SERVER["REQUEST_METHOD"]=="POST"){
     include 'db_connect.php';
-    $useremail=$_POST['signupEmail'];
+    $useremail=$_POST['useremail'];
     $useremail=str_replace("<","&lt;","$useremail");
     $useremail=str_replace(">","&gt;","$useremail");
     $useremail=str_replace('"',"&quot;","$useremail");
@@ -60,4 +60,4 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     
 }
     
-?>s
+?>
