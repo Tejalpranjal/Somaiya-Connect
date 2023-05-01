@@ -20,14 +20,11 @@
             <form  action="/collage_forum/partial/_handleSignup.php" method="post">
             <div class="modal-body">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Username</label>
-                        <input type="text" class="form-control" id="signupEmail" aria-describedby="emailHelp" name="signupEmail">
-                        <small id="namevalid" class="form-text text-muted invalid-feedback">
-                        Your username must be 2-10 characters long and should not start with a number
-                      </small>
+                        <label for="exampleInputEmail1">User Name</label>
+                        <input type="text" class="form-control" id="username" aria-describedby="emailHelp" name="username">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">UserEmail</label>
+                        <label for="exampleInputEmail1">User Email</label>
                         <input type="text" class="form-control" id="signupEmail" name="signupEmail">
                     </div>
                     <div class="form-group">
