@@ -4,10 +4,10 @@ $showAlert=false;
 if($_SERVER["REQUEST_METHOD"]=="POST"){
     include 'db_connect.php';
     $useremail=$_POST['signupEmail'];
-    $user=str_replace("<","&lt;","$user");
-    $user=str_replace(">","&gt;","$user");
-    $user=str_replace('"',"&quot;","$user");
-    $user=str_replace("'","&apos;","$user");
+    $useremail=str_replace("<","&lt;","$useremail");
+    $useremail=str_replace(">","&gt;","$useremail");
+    $useremail=str_replace('"',"&quot;","$useremail");
+    $useremail=str_replace("'","&apos;","$useremail");
 
     $pass=$_POST['signupPassword'];
     $pass=str_replace("<","&lt;","$pass");
@@ -27,7 +27,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     // Check if the email ID is of the form "@somaiya.edu"
     if (!preg_match('/^[a-zA-Z0-9._%+-]+@somaiya\.edu$/', $useremail)) {
         // Redirect the user to an error page
-        $showError="Invalid email id!";
+        $showError="Invalid email id! Use institute account only";
         header("Location: /collage_forum/index.php?signupsuccess=false&error=true");
     }
     
@@ -60,4 +60,4 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     
 }
     
-?>
+?>s
