@@ -46,7 +46,7 @@ echo '<nav class="navbar navbar-expand-xl navbar-dark bg-dark">
     </li>';
     if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']=true){
     echo '<li class="nav-item">
-      <a class="nav-link" href="profile.php"><i class="fa fa-cog mr-2" aria-hidden="true"></i><b>Setting</b></a>
+      <a class="nav-link" href="setting.php"><i class="fa fa-cog mr-2" aria-hidden="true"></i><b>Setting</b></a>
     </li>';
     }
   echo '</ul>
@@ -73,6 +73,7 @@ echo '<nav class="navbar navbar-expand-xl navbar-dark bg-dark">
 
 include 'partial/_loginmodal.php';
 include 'partial/_signupmodal.php';
+
 if(isset($_GET['signupsuccess']) && $_GET['signupsuccess']=="true" ){
     echo '<div class="alert alert-success alert-dismissible fade show my-0" role="alert">
     <strong>Success!</strong> You can now login.
@@ -83,7 +84,7 @@ if(isset($_GET['signupsuccess']) && $_GET['signupsuccess']=="true" ){
 }
 if(isset($_GET['noResult']) && $_GET['noResult']=="true" ){
     echo '<div class="alert alert-danger alert-dismissible fade show my-0" role="alert">
-    <strong>Error!</strong> Invalid creadential.
+    <strong>Error!</strong> Invalid credential.
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
       <span aria-hidden="true">&times;</span>
     </button>
@@ -105,6 +106,8 @@ if(isset($_GET['passerror']) && $_GET['passerror']=="true" ){
     </button>
   </div>';
 }
+
+
 if(isset($_GET['error']) && $_GET['error']=="true" ){
   echo '<div class="alert alert-danger alert-dismissible fade show my-0" role="alert">
   <strong>Error!</strong> "Invalid email id!"
@@ -115,7 +118,7 @@ if(isset($_GET['error']) && $_GET['error']=="true" ){
 }
 if(isset($_GET['emailused']) && $_GET['emailused']=="true" ){
     echo '<div class="alert alert-danger alert-dismissible fade show my-0" role="alert">
-    <strong>Error!</strong> username already taken, try again.
+    <strong>Error!</strong> Email or Username already taken, try again.
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
       <span aria-hidden="true">&times;</span>
     </button>
