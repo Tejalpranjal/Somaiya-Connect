@@ -29,7 +29,7 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="campus.jpg" class="d-block w-100" alt="...">
+                <img src="campuss.png" alt="" class="bd-placeholder-img" width="100%" height="100%">
                 <div class="carousel-caption d-none d-md-block">
                     <?php if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']=true){
                    echo '<h1>Welcome '.$_SESSION['useremail'].'</h1>';
@@ -41,16 +41,24 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="campus.jpg" class="d-block w-100" alt="...">
+            <img src="infra.png" alt="" class="bd-placeholder-img" width="100%" height="100%">
                 <div class="carousel-caption d-none d-md-block">
-                    <h1>Welcome</h1>
+                <?php if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']=true){
+                   echo '<h1>Welcome '.$_SESSION['useremail'].'</h1>';
+                }else{
+                    echo '<h1>Welcome</h1>';
+                } ?>
                     <h1>To Somaiya Connect</h1>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="campus.jpg" class="d-block w-100" alt="...">
+            <img src="group.png" alt="" class="bd-placeholder-img" width="100%" height="100%">
                 <div class="carousel-caption d-none d-md-block">
-                    <h1>Welcome</h1>
+                <?php if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']=true){
+                   echo '<h1>Welcome '.$_SESSION['useremail'].'</h1>';
+                }else{
+                    echo '<h1>Welcome</h1>';
+                } ?>
                     <h1>To Somaiya Connect</h1>
                 </div>
             </div>
@@ -116,7 +124,7 @@
    
            
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-10">
             <img src="infra.jpg" alt="" class="bd-placeholder-img rounded-circle mx-5" width="140" height="140">
                 <h2>KJ Somaiya</h2>
                 
