@@ -74,7 +74,7 @@ $desc=str_replace("'","&apos;","$desc");
         <form action="/collage_forum/contact.php" method="post">
             <div class="form-group">
                 <label for="email">Email address</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com"
+                <input type="email" class="form-control" id="email" name="email" placeholder="name@somaiya.edu"
                     Required>
             </div>
             <div class="form-group">
